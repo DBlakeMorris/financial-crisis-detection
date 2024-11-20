@@ -1,7 +1,7 @@
 # Financial Crisis Early Warning System
 
 ## Overview
-Avdeep learning system that predicts financial market crisis risks using multi-modal analysis of textual data and market indicators. The system employs advanced NLP techniques and market analysis to provide early warnings of potential financial crises.
+A deep learning system that predicts financial market crisis risks using multi-modal analysis of textual data and market indicators. The system employs advanced NLP techniques and market analysis to provide early warnings of potential financial crises.
 
 ## Key Features
 - Multi-modal deep learning architecture combining text and market data
