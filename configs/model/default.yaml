@@ -1,0 +1,15 @@
+document_encoder:
+  hidden_dim: 768
+  num_heads: 8
+  dropout: 0.1
+
+entity_graph:
+  hidden_dim: 768
+  num_layers: 4
+  num_heads: 8
+  dropout: 0.1
+
+market_encoder:
+  input_dim: 256
+  hidden_dim: 768
+  num_layers: 2

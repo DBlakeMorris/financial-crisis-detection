@@ -56,3 +56,10 @@ data/
 
 # Environment
 .env
+
+# Hydra
+outputs/
+multirun/
+
+# Mac
+.DS_Store

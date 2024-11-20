@@ -1,9 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 setup(
     name="financial-crisis-detection",
     version="0.1.0",
-    packages=find_packages(),
+    packages=find_namespace_packages(include=["src*"]),
+    package_dir={"": "."},
     install_requires=[
         "torch>=2.0.0",
         "pytorch-lightning>=2.0.0",
@@ -18,15 +19,4 @@ setup(
         "numpy>=1.24.0",
     ],
     python_requires=">=3.8",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="Advanced financial crisis detection using multi-modal deep learning",
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown",
-    classifiers=[
-        "Development Status :: 4 - Beta",
-        "Intended Audience :: Science/Research",
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.8",
-    ],
 )

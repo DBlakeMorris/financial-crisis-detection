@@ -1,28 +1,9 @@
 defaults:
-  - model: document_encoder
-  - model: entity_graph
-  - model: market_encoder
-  - training: optimizer
-  - training: scheduler
+  - model: config
+  - training: config
   - _self_
 
-model:
-  hidden_dim: 768
-  num_heads: 8
-  num_layers: 4
-  dropout: 0.1
-  num_entities: 1000
-  market_dim: 256
-  num_risk_levels: 5
-
-training:
-  max_epochs: 100
-  batch_size: 32
-  accumulate_grad_batches: 2
-  gradient_clip_val: 1.0
-  precision: 16
-  contrastive_weight: 0.1
-  uncertainty_weight: 0.05
+checkpoint_path: null
 
 data:
   max_seq_length: 4096
@@ -30,5 +11,5 @@ data:
   num_workers: 4
 
 wandb:
-  project: "financial-crisis-detection"
+  project: "financial-crisis-lite"
   tags: ["production"]

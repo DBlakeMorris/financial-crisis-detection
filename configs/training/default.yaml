@@ -1,0 +1,9 @@
+optimizer:
+  name: adamw
+  lr: 2.0e-5
+  weight_decay: 0.01
+
+scheduler:
+  name: cosine
+  num_warmup_steps: 1000
+  num_training_steps: 100000

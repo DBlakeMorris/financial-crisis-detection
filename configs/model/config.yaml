@@ -1,0 +1,4 @@
+hidden_dim: 768  # Match DistilBERT's hidden dim
+market_dim: 32
+num_risk_levels: 5
+max_seq_length: 512
