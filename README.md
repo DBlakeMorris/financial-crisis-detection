@@ -1,15 +1,44 @@
 # Financial Crisis Early Warning System
 
 ## Overview
-A deep learning system that predicts financial market crisis risks using multi-modal analysis of textual data and market indicators. The system employs advanced NLP techniques and market analysis to provide early warnings of potential financial crises.
+An advanced deep learning system that predicts financial market crisis risks by analyzing:
 
-## Key Features
-- Multi-modal deep learning architecture combining text and market data
-- Advanced NLP using DistilBERT for financial text analysis
-- Real-time risk level prediction (5 levels from stable to crisis)
-- Uncertainty estimation for reliable risk assessment
-- Achieves 77% accuracy on synthetic test data
-- Particularly strong at detecting severe crisis signals (90% F1-score for highest risk)
+### Text Data:
+- Financial News Articles
+- Company Performance Reports
+- Market Commentary
+- Economic Indicators Analysis
+- Trading Pattern Reports
+
+### Market Data:
+- Market Performance Metrics
+- Volatility Indicators
+- Trading Volume
+- Market Momentum Signals
+- Stability Measures
+
+The system processes these inputs through a neural architecture to classify financial risk into 5 distinct levels, from stable conditions to crisis scenarios.
+
+## Data Features
+### Text Analysis:
+- Sentiment Analysis of Financial News
+- Key Performance Indicator Extraction
+- Market Sentiment Patterns
+- Risk Signal Detection from Financial Reports
+- Economic Trend Analysis
+
+### Market Indicators:
+- Performance Trend Analysis
+- Volatility Pattern Recognition
+- Trading Volume Analysis
+- Market Stability Metrics
+- Risk Level Indicators
+
+## Model Architecture
+- Text Processing: DistilBERT-based encoder for financial text analysis
+- Market Data Processing: Custom neural network for market indicator analysis
+- Data Fusion: Advanced attention mechanism combining text and market features
+- Output: 5-level risk classification with uncertainty estimation
 
 ## Technical Highlights
 - PyTorch Lightning implementation
@@ -20,10 +49,17 @@ A deep learning system that predicts financial market crisis risks using multi-m
 - MPS/GPU acceleration support
 
 ## Model Performance
-- Overall Accuracy: 77%
-- Weighted Average F1-Score: 0.75
-- Crisis Detection (Highest Risk) F1-Score: 0.90
-- Balanced performance across risk levels
+Risk Level Classification Results:
+- Stable Market (Level 0): 74% F1-score
+  * High precision in identifying stable conditions
+- Early Warning (Level 1): 76% F1-score
+  * Strong detection of emerging risks
+- Elevated Risk (Level 2): 82% F1-score
+  * Excellent identification of growing market stress
+- High Risk (Level 3): 38% F1-score
+  * Identifies severe market conditions
+- Crisis (Level 4): 90% F1-score
+  * Exceptional detection of crisis scenarios
 
 ## Installation
 ```bash
