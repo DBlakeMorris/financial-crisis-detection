@@ -1,0 +1,18 @@
+groups:
+- name: crisis_detection
+  rules:
+  - alert: HighModelLatency
+    expr: model_inference_latency_seconds > 0.5
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High model inference latency"
+      
+  - alert: LowAccuracy
+    expr: model_accuracy_rolling_window < 0.7
+    for: 10m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Model accuracy degradation detected"
