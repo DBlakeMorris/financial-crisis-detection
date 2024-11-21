@@ -3,13 +3,34 @@ defaults:
   - training: config
   - _self_
 
-checkpoint_path: null
+model:
+  hidden_dim: 768
+  num_heads: 8
+  num_layers: 4
+  dropout: 0.1
+  num_entities: 1000
+  market_dim: 32
+  num_risk_levels: 5
+  max_seq_length: 512
+
+training:
+  learning_rate: 1e-4
+  max_epochs: 20
+  batch_size: 8
+  gradient_clip_val: 1.0
+  accumulate_grad_batches: 2  # Added this line
+  warmup_steps: 100
+  early_stopping_patience: 5
+  uncertainty_weight: 0.1
+  kl_weight: 0.1
 
 data:
-  max_seq_length: 4096
-  max_documents: 1000
-  num_workers: 4
+  max_seq_length: 512
+  num_workers: 0
+  train_size: 0.8
+  val_size: 0.1
+  test_size: 0.1
 
 wandb:
-  project: "financial-crisis-lite"
+  project: "financial-crisis-enhanced"
   tags: ["production"]

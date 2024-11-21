@@ -1,4 +1,8 @@
-hidden_dim: 768  # Match DistilBERT's hidden dim
+hidden_dim: 768
+num_heads: 8
+num_layers: 4
+dropout: 0.1
+num_entities: 1000
 market_dim: 32
 num_risk_levels: 5
 max_seq_length: 512
