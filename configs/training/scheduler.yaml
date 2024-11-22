@@ -1,0 +1,8 @@
+lr_scheduler:
+  type: "OneCycleLR"
+  params:
+    max_lr: 1e-3
+    epochs: 100
+    steps_per_epoch: 100
+    pct_start: 0.3
+    div_factor: 25

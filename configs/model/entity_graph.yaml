@@ -1,0 +1,6 @@
+graph:
+  node_features: 64
+  edge_features: 32
+  num_layers: 3
+  aggregation: "mean"
+  dropout: 0.1

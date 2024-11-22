@@ -1,0 +1,7 @@
+model:
+  type: "DistilBERT"
+  params:
+    pretrained_model_name: "distilbert-base-uncased"
+    freeze_base: false
+    output_dim: 768
+    dropout: 0.1

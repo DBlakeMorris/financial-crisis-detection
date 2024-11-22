@@ -1,0 +1,7 @@
+model:
+  architecture:
+    input_dim: 10
+    hidden_dims: [64, 32]
+    output_dim: 32
+    dropout: 0.2
+    activation: "ReLU"
