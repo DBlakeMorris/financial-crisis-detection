@@ -73,6 +73,8 @@ Latest test results show:
   * Level 3 (High Risk): 38% F1-score
   * Level 4 (Crisis): 90% F1-score
 
+The lower F1-score (38%) for Level 3 reflects the model's difficulty in distinguishing high-risk states that share characteristics with both medium-risk and crisis scenarios, compounded by the subjective nature of what constitutes "high risk" in financial markets, making it difficult for the model to establish clear decision boundaries.
+
 ## Production Features
 
 ### Real-time Processing
