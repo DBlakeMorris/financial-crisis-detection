@@ -24,7 +24,7 @@ The system processes these inputs through a sophisticated neural architecture to
 
 ### Core Features
 #### Text Analysis:
-- Advanced sentiment patterns in financial news
+- Sentiment patterns in financial news
 - Risk-indicative language processing
 - Cross-document relationship analysis
 - Synthetic news text classification
