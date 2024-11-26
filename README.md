@@ -1,7 +1,7 @@
 # Financial Crisis Early Warning System
 
 ## Overview
-A deep learning system that predicts financial market crisis risk levels by analyzing synthetic financial news text and market indicators. The model demonstrates the potential for multi-modal deep learning in financial risk detection, incorporating advanced features like meta-learning and A/B testing frameworks.
+A deep learning system that predicts financial market crisis risk levels by analyzing synthetic financial news text and market indicators. The model demonstrates the potential for multi-modal deep learning in financial risk detection, incorporating advanced features like meta-learning and A/B testing frameworks. The current implementation focuses on production reliability over absolute scale, optimizing for real-world deployment rather than maximum model size. These research directions represent future horizons as computational resources and requirements evolve.
 
 ## Potential Application Scope
 ### Text Data Sources:
@@ -126,7 +126,19 @@ python src/experimentation/ab_testing.py
 docker-compose up -d
 ```
 
-## Future Enhancements
+## Future Enhancements (Notes for Future Reference)
+
+### Learning Approaches
+
+- RLHF Integration: Incorporating expert feedback loops through reinforcement learning from human feedback for better alignment with trader intuition
+- Constitutional AI: Implementing safety bounds and regulatory compliance directly into model architecture
+- Chain-of-Thought Mechanisms: Adding explicit reasoning paths for more interpretable financial risk assessment
+
+### Scaling Infrastructure
+
+- Distributed Training: Framework for training across 1000+ GPUs using techniques like ZeRO-3 and Pipeline Parallelism
+- Dynamic Architecture Search: Automated discovery of optimal architectures for different market regimes
+- Web-Scale Data Processing: Infrastructure for processing real-time financial data from millions of global sources
 
 ### Model Robustness
 - Adversarial testing implementation
