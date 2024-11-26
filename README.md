@@ -1,7 +1,9 @@
 # Financial Crisis Early Warning System
 
 ## Overview
-A deep learning system that predicts financial market crisis risk levels by analyzing synthetic financial news text and market indicators. The model demonstrates the potential for multi-modal deep learning in financial risk detection, incorporating advanced features like meta-learning and A/B testing frameworks. The current implementation focuses on production reliability over absolute scale, optimizing for real-world deployment rather than maximum model size. These research directions represent future horizons as computational resources and requirements evolve.
+A deep learning system that predicts financial market crisis risk levels by analyzing synthetic financial news text and market indicators. The model demonstrates the potential for multi-modal deep learning in financial risk detection, incorporating advanced features like meta-learning and A/B testing frameworks. 
+
+PLEASE NOTE: The current implementation focuses on production reliability over absolute scale, optimizing for real-world deployment rather than maximum model size. These research directions represent future horizons as computational resources and requirements evolve.
 
 ## Potential Application Scope
 ### Text Data Sources:
